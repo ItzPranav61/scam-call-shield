@@ -1,0 +1,18 @@
+.tabs { margin-top: 24px; }
+.scenarioTabs { display: flex; width: 100%; justify-content: center; }
+.panel[data-state='inactive'] { display: none; }
+.panel { outline-offset: 4px; }
+.simulation { margin-top: 22px; }
+.steps { display: flex; justify-content: space-between; gap: 12px; list-style: none; margin: 0 0 22px; padding: 0; }
+.steps li { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--ink-muted); }.steps li > span { display: grid; place-items: center; width: 23px; height: 23px; background: var(--sage); border-radius: 50%; }.steps li[aria-current] { font-weight: 600; color: var(--green); }.steps li[aria-current] > span { background: var(--green); color: var(--canvas); }
+.story { display: flex; flex-direction: column; gap: 14px; }
+.caller { font-size: 11px; color: var(--ink-muted); margin: 0; }
+.story h3 { margin: 0; font-size: 22px; font-weight: 550; letter-spacing: -.5px; }
+.story blockquote { padding: 20px; background: var(--sage); border: 1px solid var(--line); border-radius: 14px; font-size: 17px; line-height: 1.7; margin: 0; }
+.context { font-size: 13px; line-height: 1.8; color: var(--ink-muted); margin: 0; }
+.flags { margin: 4px 0 0; padding-left: 20px; }
+.choices { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 18px; }
+.controls { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 23px; }
+.verification { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; line-height: 1.8; color: var(--green); margin: 16px 0 0; }.verification svg { flex-shrink: 0; width: 18px; height: 22px; }
+.disclaimer { border-top: 1px solid var(--line); padding-top: 17px; margin: 22px 0 0; font-size: 11px; line-height: 1.8; color: var(--ink-muted); }
+@media(max-width:550px) { .steps { gap: 6px; }.steps li { font-size: 9px; gap: 4px; }.steps li > span { width: 19px; height: 19px; flex-shrink: 0; }.choices { grid-template-columns: 1fr; }.story h3 { font-size: 20px; }.story blockquote { font-size: 15px; padding: 16px; }.scenarioTabs { gap: 0; }.controls { flex-wrap: wrap; } }

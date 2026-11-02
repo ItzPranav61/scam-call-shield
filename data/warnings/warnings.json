@@ -1,0 +1,22 @@
+{
+  "SENSITIVE_REQUEST": {
+    "hi-en": "O T P mat batayein.",
+    "mr-IN": "ओ टी पी सांगू नका."
+  },
+  "DIGITAL_ARREST": {
+    "hi-en": "Digital arrest? Call kaat dein.",
+    "mr-IN": "अटकेच्या धमकीला घाबरू नका."
+  },
+  "MONEY_MOVEMENT": {
+    "hi-en": "Rukiye. Paise na bhejein.",
+    "mr-IN": "पैसे पाठवू नका. आधी खात्री करा."
+  },
+  "REMOTE_ACCESS": {
+    "hi-en": "Screen share na karein.",
+    "mr-IN": "स्क्रीन शेअर करू नका."
+  },
+  "SCAM_PATTERN": {
+    "hi-en": "Dhokhe ke sanket. Savdhaan.",
+    "mr-IN": "फसवणुकीचे संकेत आहेत. सावध राहा."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "scamcall-shield",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/relay",
+    "packages/detector",
+    "packages/protocol"
+  ],
+  "scripts": {
+    "dev:relay": "npm run dev --workspace=@scamcall/relay --",
+    "dev:web": "npm run dev --workspace=@scamcall/web --",
+    "test": "npm run test --workspace=@scamcall/detector && npm run test --workspace=@scamcall/relay && npm run test --workspace=@scamcall/web && node --test tests/foundation.test.mjs",
+    "lint": "eslint .",
+    "typecheck": "npm run typecheck --workspaces",
+    "build:node": "npm run build --workspace=@scamcall/protocol && npm run build --workspace=@scamcall/detector && npm run build --workspace=@scamcall/relay",
+    "build": "npm run build:node && npm run build --workspace=@scamcall/web",
+    "pretest": "npm run build:node",
+    "dev:relay:live": "npm run dev:live --workspace=@scamcall/relay",
+    "check:readme-assets": "node scripts/check-readme-assets.mjs"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "24.19.2",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.3"
+  }
+}

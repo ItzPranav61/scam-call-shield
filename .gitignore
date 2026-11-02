@@ -1,0 +1,32 @@
+node_modules/
+.next/
+dist/
+*.tsbuildinfo
+.env*
+!.env.example
+!**/.env.example
+.vercel/
+artifacts/
+coverage/
+*.log
+/tts_out.*
+/data/sample.*
+
+/data/warnings/audio/
+
+/data/scenarios/audio/
+/docs/gnani/raw/
+/scripts/smoke/
+
+# Local generated native leftovers; keep on disk, never publish.
+/apps/mobile/android/
+/apps/mobile/.expo/
+/apps/mobile/ios/
+
+# Raw README recording takes stay local; reviewed GIF/PNG assets remain trackable.
+/docs/assets/**/*.mp4
+/docs/assets/**/*.mov
+/docs/assets/**/*.mkv
+/takes/**/*.mp4
+/takes/**/*.mov
+/takes/**/*.mkv

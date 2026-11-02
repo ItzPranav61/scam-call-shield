@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "dist",
+    "declaration": true,
+    "rootDir": "../..",
+    "paths": {
+      "@scamcall/protocol": [
+        "./src/index.ts"
+      ],
+      "@scamcall/detector": [
+        "../detector/src/index.ts"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}

@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--canvas);
+  --color-foreground: var(--ink);
+  --color-primary: var(--green);
+  --color-primary-foreground: var(--button-ink, var(--canvas));
+  --color-secondary: var(--sage);
+  --color-secondary-foreground: var(--secondary-ink, var(--green));
+  --color-muted-foreground: var(--ink-muted);
+  --color-accent: var(--sage);
+  --color-border: var(--line);
+  --color-input: var(--line);
+  --color-ring: var(--focus-ring, var(--green));
+  --color-destructive: var(--alert);
+  --color-destructive-foreground: var(--canvas);
+  --color-warning: var(--alert-soft);
+  --color-warning-foreground: var(--alert-ink);
+  --color-warning-border: var(--alert-line);
+}
+
+:root {
+  color-scheme: light;
+  --canvas: #f7f6f0;
+  --surface: #fdfcf8;
+  --sage: #e5ebe1;
+  --green: #123e2e;
+  --green-hover: #20533e;
+  --ink: #173d2e;
+  --ink-muted: #506154;
+  --line: #d4dcd1;
+  --alert: #b63825;
+  --alert-ink: #8e2d1e;
+  --alert-soft: #fbe7db;
+  --alert-line: #e9b39e;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button { font: inherit; cursor: pointer; }
+a { color: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible {
+  outline: 3px solid var(--green);
+  outline-offset: 5px;
+}
+
+/* Root canvas also follows the selected product theme. */
+:root { color-scheme: dark; --canvas: #09090b; --ink: #f8fafc; }
+:root[data-theme='light'] { color-scheme: light; --canvas: #f8fafc; --ink: #0f172a; }

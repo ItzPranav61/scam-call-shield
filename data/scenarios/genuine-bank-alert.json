@@ -1,0 +1,10 @@
+{
+  "segments": [
+    "Yeh kalpanik bank appointment reminder hai.",
+    "Bank will never ask for OTP. Never share your OTP.",
+    "Apna O T P kisi ko mat bataiye.",
+    "Confirm karna ho to official channel khud verify karein."
+  ],
+  "expectedFinalLevel": "safe",
+  "expectedWarningCode": null
+}

@@ -1,0 +1,61 @@
+.live { padding: 24px; border: 1px solid var(--line); border-radius: 14px; background: var(--tone-111827); color: var(--ink); }
+.live p, .live li { line-height: 1.8; overflow-wrap: anywhere; }
+.notice { padding: 12px; border: 1px solid var(--alert-line); border-radius: 8px; font-weight: 600; }
+.inputs { display: flex; flex-wrap: wrap; gap: 16px; margin-block: 20px; }
+.inputs label { display: grid; gap: 8px; flex: 1; min-width: 180px; }
+.inputs select { background: var(--tone-172539); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 12px; width: 100%; }
+.consent { display: flex; gap: 12px; align-items: flex-start; line-height: 1.8; }
+.consent input { margin-top: 7px; width: 20px; height: 20px; flex-shrink: 0; }
+.controls { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-block: 20px; }
+.panels { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.panels section { min-width: 0; padding: 18px; border: 1px solid var(--line); border-radius: 12px; }
+.panels ol, .panels ul { padding-left: 22px; }
+.risk { padding: 10px; border: 1px solid currentColor; border-radius: 8px; }
+.risk[data-level='caution'] { color: var(--tone-fbbf24); }
+.risk[data-level='danger'] { color: var(--tone-fca5a5); }
+@media(max-width:650px) { .live { padding: 16px; }.panels { grid-template-columns: 1fr; } }
+
+.technical { margin-block: 16px; padding: 12px; border: 1px solid var(--line); border-radius: 8px; }
+.technical summary { cursor: pointer; font-weight: 600; }
+.notice { color: var(--alert-ink); background: var(--alert-soft); border-color: var(--alert-line); }
+.notice { position: sticky; top: 84px; z-index: 2; }
+@media(max-width:760px) { .notice { top: 76px; } }
+
+.modeBadge { padding: 10px; border: 1px solid currentColor; border-radius: 8px; font-weight: 600; }
+.modeBadge[data-mode='mock'], .mockWarning { color: #fbbf24; background: #302618; }
+.modeBadge[data-mode='live'] { color: #b4ef83; background: #15291a; }
+.modeBadge[data-mode='unreachable'] { color: #fca5a5; background: #301a20; }
+.mockWarning { padding: 12px; border: 1px solid currentColor; border-radius: 8px; }
+.technical dt { font-weight: 600; margin-top: 8px; }
+.technical dd { margin-left: 0; }
+
+.micSettings { display: grid; gap: 12px; padding: 16px; margin-block: 12px; border: 1px solid var(--line); }
+.micSettings label { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.micSettings select { max-width: 100%; padding: 8px; background: var(--tone-172539); color: var(--ink); }
+.level label { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.level meter { width: min(180px, 100%); }
+
+.recording { padding: 0; border: 0; border-radius: 0; font-size: 18px; }
+.captureArea { min-height: calc(100svh - 32px); }
+.recordBanners { position: sticky; top: 0; z-index: 3; background: var(--tone-111827); padding-block: 2px; }
+.recording .notice { position: static; margin: 0 0 6px; padding: 8px 12px; font-size: 16px; }
+.recording .modeBadge { margin: 0 0 8px; padding: 8px 12px; font-size: 18px; }
+.recording .inputs { margin-block: 10px; }
+.recording .inputs label { font-size: 16px; gap: 4px; }
+.recording .inputs select { padding: 8px; }
+.recording .consent { font-size: 15px; }
+.recording .controls { margin-block: 10px; }
+.recording .panels { gap: 18px; }
+.recording .panels section { padding: 14px 18px; max-height: max(250px, calc(100svh - 350px)); overflow: auto; }
+.recording .panels h3 { margin-block: 6px; font-size: 22px; }
+.recording .panels li { font-size: 24px; line-height: 1.5; margin-block: 8px; }
+.recording .risk { font-size: 28px; font-weight: 650; line-height: 1.3; }
+.recordTechnical { margin-top: 24px; padding-block: 18px; border-top: 1px solid var(--line); }
+@media(min-width:1600px) { .recording { font-size: 20px; }.recording .panels li { font-size: 30px; }.recording .risk { font-size: 36px; } }
+
+.risk[data-ended='true'] { color: #a8adb7; background: #242831; }
+
+.hostedNotice { margin: 0; padding: 16px 24px; color: var(--ink); line-height: 1.8; overflow-wrap: anywhere; }
+
+.hostedNotice a { display: inline-flex; min-height: 44px; align-items: center; color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.hostedNotice a:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 3px; border-radius: 3px; }

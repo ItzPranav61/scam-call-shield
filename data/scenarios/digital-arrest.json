@@ -1,0 +1,9 @@
+{
+  "segments": [
+    "Main police se bol raha hoon, yeh kalpanik call hai.",
+    "Aapko arrest karenge, abhi turant kaam karo.",
+    "Family ko mat batana aur call par raho."
+  ],
+  "expectedFinalLevel": "danger",
+  "expectedWarningCode": "DIGITAL_ARREST"
+}

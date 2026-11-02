@@ -1,0 +1,6 @@
+.overlay { position: fixed; inset: 0; z-index: 50; background: #0009; backdrop-filter: blur(4px); animation: overlay-in 180ms ease-out; }
+.content { position: fixed; top: 0; bottom: 0; right: 0; z-index: 50; width: min(360px,90vw); padding: 34px 24px; overflow-y: auto; background: var(--canvas); border-left: 1px solid var(--line); animation: enter 200ms ease-out; }
+.close { position: absolute; top: 16px; right: 16px; display: grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 10px; background: transparent; color: var(--ink); }.close svg { width: 20px; height: 20px; }
+@keyframes enter { from { transform: translateX(100%); } to { transform: translateX(0); } }
+@keyframes overlay-in { from { opacity: 0; } to { opacity: 1; } }
+@media(prefers-reduced-motion:reduce) { .content, .overlay { animation: none; } }

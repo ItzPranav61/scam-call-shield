@@ -1,0 +1,20 @@
+{
+  "name": "@scamcall/detector",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/packages/detector/src/index.d.ts",
+      "default": "./dist/packages/detector/src/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --config vitest.config.ts"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@scamcall/relay",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "test": "vitest run --config vitest.config.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/apps/relay/src/index.js",
+    "predev": "npm run build --workspace=@scamcall/detector",
+    "pretest": "npm run build --workspace=@scamcall/detector",
+    "prebuild": "npm run build --workspace=@scamcall/detector",
+    "dev:live": "tsx src/index.ts --live",
+    "predev:live": "npm run build --workspace=@scamcall/detector"
+  },
+  "dependencies": {
+    "@scamcall/protocol": "0.0.0",
+    "@scamcall/detector": "0.0.0",
+    "ws": "^8.18.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "vitest": "^4.0.0",
+    "@types/ws": "^8.18.0",
+    "@types/node": "^24.0.0"
+  }
+}

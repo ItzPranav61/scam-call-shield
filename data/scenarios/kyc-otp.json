@@ -1,0 +1,9 @@
+{
+  "segments": [
+    "Yeh ek kalpanik KYC verification call hai.",
+    "Aapka KYC pending hai, account block ho jayega.",
+    "Apna O T P abhi bataiye."
+  ],
+  "expectedFinalLevel": "danger",
+  "expectedWarningCode": "SENSITIVE_REQUEST"
+}

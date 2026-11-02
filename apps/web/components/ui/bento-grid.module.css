@@ -1,0 +1,4 @@
+.grid { display: grid; width: 100%; gap: 22px; }
+.card { position: relative; display: flex; flex-direction: column; overflow: hidden; border-radius: 22px; background: var(--surface); box-shadow: 0 2px 4px var(--tone-123e2e03), 0 12px 32px var(--tone-123e2e06); transition: box-shadow .2s, border-color .2s; }
+.card:hover, .card:focus-within { border-color: var(--tone-95a995); box-shadow: 0 8px 30px var(--tone-123e2e10); }
+@media(prefers-reduced-motion:reduce) { .card { transition: none; } }

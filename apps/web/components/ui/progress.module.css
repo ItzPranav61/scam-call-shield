@@ -1,0 +1,5 @@
+.progress { display: block; appearance: none; width: 100%; height: 5px; border: 0; border-radius: 5px; overflow: hidden; background: var(--line); color: var(--focus-ring); }
+.progress::-webkit-progress-bar { background: var(--line); }
+.progress::-webkit-progress-value { background: var(--focus-ring); transition: width 160ms linear; }
+.progress::-moz-progress-bar { background: var(--focus-ring); }
+@media(prefers-reduced-motion:reduce) { .progress::-webkit-progress-value { transition: none; } }

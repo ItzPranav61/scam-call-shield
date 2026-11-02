@@ -1,0 +1,9 @@
+{
+  "segments": [
+    "Yeh refund ki baat hai.",
+    "Refund lene ke liye UPI se fee pay karo.",
+    "Abhi turant transfer karo."
+  ],
+  "expectedFinalLevel": "danger",
+  "expectedWarningCode": "MONEY_MOVEMENT"
+}

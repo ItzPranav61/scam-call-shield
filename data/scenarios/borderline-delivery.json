@@ -1,0 +1,9 @@
+{
+  "segments": [
+    "Yeh kalpanik parcel delivery update hai.",
+    "Kripya abhi delivery window confirm karein.",
+    "Paise bhejne ki zarurat nahi, baad mein confirm kar sakte hain."
+  ],
+  "expectedFinalLevel": "safe",
+  "expectedWarningCode": null
+}

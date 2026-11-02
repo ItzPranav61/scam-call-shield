@@ -1,0 +1,17 @@
+.section { padding: 80px 36px 90px; background: var(--tone-09090b); border-top: 1px solid var(--tone-293344); }
+.inner { display: grid; grid-template-columns: .85fr 1.25fr; gap: 64px; max-width: 1168px; margin: auto; align-items: start; }
+.eyebrow { color: var(--tone-93c5fd); font-size: 13px; margin: 0 0 22px; }
+.header h2 { margin: 0; font-size: clamp(36px,3.7vw,49px); font-weight: 550; line-height: 1.13; letter-spacing: -.045em; scroll-margin-top: 105px; }
+.header > p:last-of-type { max-width: 330px; font-size: 15px; line-height: 1.85; color: var(--tone-94a3b8); margin: 23px 0 0; }
+.note { padding: 18px 20px; border-left: 2px solid var(--tone-60a5fa); background: var(--tone-111827); margin-top: 30px; max-width: 330px; }
+.note strong { color: var(--tone-e2e8f0); font-weight: 500; font-size: 13px; }.note p { margin: 8px 0 0; font-size: 13px; line-height: 1.8; color: var(--tone-94a3b8); }
+.questions > div { border: 0; border-bottom: 1px solid var(--line); background: transparent; border-radius: 0; margin: 0; overflow: visible; }
+.questions > div[data-state='open'] { border-color: var(--line); }
+.questions h3 button { color: var(--tone-e2e8f0); min-height: 72px; font-size: 15px; padding: 22px 6px; }
+.questions h3 button:hover { background: var(--tone-182334); }
+.questions h3 button:focus-visible { outline-color: var(--tone-60a5fa); }
+.questions h3 button svg { color: var(--tone-93c5fd); }
+@media(max-width:900px) { .inner { gap: 32px; grid-template-columns: .8fr 1.2fr; } }
+@media(max-width:700px) { .section { padding: 56px 20px 64px; }.inner { grid-template-columns: 1fr; gap: 32px; }.header > p:last-of-type { max-width: 460px; }.note { max-width: none; margin-top: 24px; }.questions h3 button { padding: 20px 6px; font-size: 15px; } }
+
+.links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }.note { padding: 0; border: 0; background: transparent; }.note p { margin-top: 12px; }.questions h3 button:focus-visible { border-radius: 6px; }

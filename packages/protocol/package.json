@@ -1,0 +1,19 @@
+{
+  "name": "@scamcall/protocol",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/packages/protocol/src/index.d.ts",
+      "default": "./dist/packages/protocol/src/index.js"
+    }
+  },
+  "dependencies": {
+    "@scamcall/detector": "0.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  }
+}

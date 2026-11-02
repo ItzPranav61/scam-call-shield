@@ -1,0 +1,80 @@
+.hero { background: radial-gradient(ellipse at 78% 41%, var(--surface) 0%, var(--canvas) 38%, var(--canvas) 70%); padding: 32px 40px 0; overflow: hidden; }
+.inner { max-width: 1160px; margin: auto; }
+.topline { display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+.brand { display: flex; align-items: center; gap: 10px; font-size: 19px; letter-spacing: -.7px; font-weight: 600; }
+
+.brand svg { width: 20px; height: 20px; }
+.research { display: flex; gap: 8px; align-items: center; color: var(--ink-muted); font-size: 11px; }
+.research i,.statusDot,.eyebrow > span { width: 5px; height: 5px; border-radius: 50%; background: var(--sage); }
+.composition { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 32px; min-height: 740px; padding: 50px 0; }
+.copy { position: relative; z-index: 2; }
+.eyebrow { display: flex; gap: 8px; align-items: center; font-size: 12px; color: var(--ink-muted); margin: 0 0 26px; }
+.copy h1 { font-size: clamp(58px, 6.4vw, 88px); font-weight: 550; letter-spacing: -.065em; line-height: 1.02; margin: 0; }
+.pause { position: relative; display: inline-block; color: var(--ink-muted); }
+.pause svg { position: absolute; width: 104%; height: 14px; bottom: -9px; left: 0; color: var(--ink-muted); }
+.description { max-width: 365px; color: var(--ink-muted); font-size: 15px; line-height: 1.9; margin: 33px 0 29px; }
+.actions { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
+.actions button { display: flex; align-items: center; justify-content: center; gap: 20px; background: var(--sage); color: var(--ink-muted); border: 1px solid var(--line); border-radius: 30px; padding: 0 21px; min-height: 49px; font-weight: 600; font-size: 12px; transition: background .2s, transform .2s; box-shadow: 0 4px 20px var(--tone-153e2e14); }
+.actions button:hover { background: var(--green-hover); transform: translateY(-2px); }
+.actions a { color: var(--ink-muted); font-size: 12px; text-decoration: none; padding: 14px 0; }
+.actions a:hover { text-decoration: underline; }
+.noMic { display: flex; align-items: center; gap: 6px; color: var(--ink-muted); font-size: 10px; margin: 19px 0 0; }.noMic svg { width: 13px; }
+.scene { min-height: 570px; position: relative; display: grid; place-items: center; }
+.orbit { position: absolute; height: 490px; width: 590px; border: 1px dashed var(--line); border-radius: 50%; transform: rotate(-32deg); }
+.phone { z-index: 1; width: 326px; background: var(--sage); color: var(--ink-muted); border: 5px solid var(--line); border-radius: 31px; box-shadow: 0 30px 80px var(--tone-153e2e14), 0 0 0 1px var(--tone-153e2e12); padding: 20px 19px 14px; rotate: 4deg; }
+.phoneTop { display: flex; align-items: center; gap: 5px; color: var(--ink-muted); font-size: 9px; }.phoneTop > span:last-child { margin-left: auto; padding: 4px 6px; border: 1px solid var(--line); border-radius: 5px; font-size: 8px; }
+.statusDot { display: inline-block; background: var(--sage); }
+.callerIcon { display: grid; place-items: center; width: 61px; height: 65px; background: var(--sage); color: var(--ink-muted); border-radius: 21px; font-size: 32px; margin: 27px auto 17px; box-shadow: inset 0 1px var(--tone-153e2e14); }
+.phone h2 { font-size: 22px; font-weight: 550; letter-spacing: -.7px; text-align: center; margin: 0; }.callerSubtitle { font-size: 10px; color: var(--ink-muted); text-align: center; margin: 7px 0 0; }
+.waveform { height: 63px; display: flex; align-items: center; justify-content: center; gap: 3px; }.waveform i { width: 3px; background: var(--sage); border-radius: 4px; }
+.transcript { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }.transcript > span { font-size: 9px; color: var(--ink-muted); }.transcript p { font-size: 14px; line-height: 1.8; letter-spacing: -.2px; margin: 8px 0 0; }.transcript mark { background: transparent; color: inherit; }.transcript .marked { background: var(--sage); border-radius: 3px; }
+.result { display: flex; align-items: center; gap: 9px; background: var(--sage); border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin-top: 12px; }.resultIcon { flex-shrink: 0; display: grid; place-items: center; width: 27px; height: 29px; color: var(--ink-muted); font-size: 19px; }.resultIcon svg { width: 23px; }.result h3 { font-size: 11px; margin: 0 0 4px; font-weight: 600; }.result p { font-size: 9px; line-height: 1.5; color: var(--ink-muted); margin: 0; }.resultWarning { background: var(--sage); border-color: var(--line); }.resultWarning .resultIcon { color: var(--ink-muted); }.phoneFooter { text-align: center; font-size: 8px; color: var(--ink-muted); margin: 12px 0 0; }
+.floatingNote { position: absolute; z-index: 2; top: 4px; left: -12px; display: flex; gap: 10px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 13px; padding: 13px 17px; rotate: -9deg; box-shadow: 0 10px 35px var(--tone-153e2e14); font-size: 11px; color: var(--ink-muted); }.floatingNote > span { display: grid; place-items: center; width: 32px; height: 35px; border-radius: 10px; background: var(--sage); color: var(--ink-muted); font-size: 20px; }.floatingNote small { display: block; font-size: 9px; margin-top: 5px; color: var(--ink-muted); }
+.otpNote { position: absolute; z-index: 2; bottom: 6px; left: -29px; width: 184px; padding: 17px; rotate: -9deg; border: 1px solid var(--line); border-radius: 15px; background: var(--sage); color: var(--ink-muted); box-shadow: 0 15px 35px var(--tone-153e2e14); }.otpNote > span { font-size: 11px; font-weight: 600; }.otpNote > div { display: flex; gap: 4px; margin: 12px 0 10px; }.otpNote i { display: grid; place-items: center; width: 21px; height: 26px; border: 1px solid var(--line); border-radius: 5px; font-size: 19px; font-style: normal; }.otpNote small { font-size: 9px; }
+.pauseNote { position: absolute; z-index: 2; right: -21px; top: 130px; background: var(--sage); color: var(--ink-muted); border: 1px solid var(--line); border-radius: 14px; padding: 15px 17px; font-size: 11px; line-height: 1.6; rotate: 10deg; box-shadow: 0 10px 35px var(--tone-153e2e14); }.pauseNote > span { display: block; font-size: 23px; margin-bottom: 5px; }
+.bottomline { display: flex; justify-content: space-between; align-items: center; gap: 22px; padding: 22px 0; border-top: 1px solid var(--line); }.bottomline > span { font-size: 12px; color: var(--ink-muted); }.bottomline p { margin: 0; color: var(--ink-muted); font-size: 9px; line-height: 1.8; text-align: right; }
+@media(max-width:1050px) { .hero { padding-inline: 30px; }.composition { gap: 18px; }.copy h1 { font-size: 65px; }.phone { width: 295px; }.floatingNote { left: 0; top: 0; }.otpNote { left: -8px; }.pauseNote { right: -10px; }.scene { min-height: 600px; } }
+@media(max-width:760px) { .hero { padding: 26px 22px 0; }.research { display: none; }.composition { grid-template-columns: 1fr; padding: 55px 0 30px; gap: 50px; }.copy { text-align: center; }.eyebrow,.actions,.noMic { justify-content: center; }.copy h1 { font-size: clamp(56px, 12vw, 80px); }.description { margin: 30px auto 25px; max-width: 370px; font-size: 14px; }.scene { min-height: 600px; width: min(100%, 470px); margin: auto; }.phone { width: min(305px, 86%); rotate: 3deg; }.orbit { width: 460px; height: 490px; }.floatingNote { left: 0; top: 0; padding: 10px 13px; }.pauseNote { right: -3px; top: 90px; padding: 11px 12px; font-size: 10px; }.otpNote { left: 0; bottom: -3px; width: 169px; padding: 13px; }.otpNote i { width: 19px; }.bottomline { flex-direction: column; align-items: center; gap: 9px; text-align: center; }.bottomline p { text-align: center; } }
+@media(prefers-reduced-motion:reduce) { .actions button { transition: none; }.actions button:hover { transform: none; } }
+/* Keep the decorative OTP note clear of the readable result on small screens. */
+@media(max-width:760px) {
+  .scene { min-height: 735px; align-items: start; padding-top: 55px; }
+  .otpNote { bottom: 5px; }
+}
+/* Brand and semantic states. */
+
+.pause, .pause svg { color: var(--green); }
+.actions button { background: var(--green); color: var(--canvas); border-color: var(--green); }
+.actions button:hover { background: var(--green-hover); }
+.phone { box-shadow: 0 28px 70px var(--tone-173d2e1c); }
+.floatingNote { background: var(--green); color: var(--canvas); }
+.floatingNote small { color: var(--tone-e1e8dc); }
+.floatingNote > span { background: var(--sage); color: var(--green); }
+.callerIcon, .pauseNote { background: var(--sage); color: var(--green); }
+.transcript .marked { background: var(--alert-soft); color: var(--alert-ink); box-shadow: 0 1px var(--alert-line); }
+.resultWarning { background: var(--alert-soft); border-color: var(--alert-line); }
+.resultWarning h3, .resultWarning p, .resultWarning .resultIcon { color: var(--alert-ink); }
+.otpNote { background: var(--sage); color: var(--green); }
+.waveform i { background: var(--tone-7c9a83); }
+.research i, .statusDot, .eyebrow > span { background: var(--green); }
+/* Audit refinement: readable supporting text and shorter hero measure. */
+.copy h1 { font-size: clamp(54px, 5vw, 72px); }
+.description { font-size: 16px; max-width: 390px; }
+.eyebrow, .research { font-size: 12px; }
+.noMic { font-size: 12px; }
+.phoneTop { font-size: 11px; }
+.phoneTop > span:last-child, .phoneFooter { font-size: 10px; }
+.callerSubtitle, .transcript > span { font-size: 12px; }
+.result h3 { font-size: 13px; line-height: 1.5; }
+.result p { font-size: 11px; }
+.bottomline p { font-size: 11px; }
+@media(max-width:760px) { .copy h1 { font-size: clamp(46px,11vw,72px); }.description { font-size: 15px; } }
+/* Scoped entrance polish; the full heading remains one accessible name. */
+.hero { position: relative; isolation: isolate; }
+.actions button { position: relative; }
+.animatedPause { position: relative; color: var(--green); }
+.animatedPause::after { content: ''; position: absolute; left: 0; right: 0; bottom: -5px; height: 7px; border-top: 2px solid currentColor; border-bottom: 1px solid currentColor; border-radius: 50%; rotate: -2deg; }
+/* Informational header badges retain consistent optical spacing on all widths. */
+.topline { flex-wrap: wrap; gap: 12px 20px; }
+.brand { gap: 11px; font-size: 18px; letter-spacing: -.55px; }
+@media(max-width:420px) { .topline { align-items: flex-start; }.topline > span { margin-left: 51px; } }
