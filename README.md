@@ -6,6 +6,8 @@ Scam callers pressure people to share OTPs or “verify” KYC before they can p
 In a synthetic call demo, ScamCall Shield shows that pressure pattern as it happens,
 in plain words, with a spoken warning.
 
+One-page pitch: [PITCH.md](PITCH.md)
+
 ![ScamCall Shield, real app on a synthetic call](docs/assets/demo.gif)
 
 Real app, synthetic call. Mic on, live transcription, risk level and explanation.
